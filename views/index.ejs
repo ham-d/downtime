@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="dtApp">
+  <head>
+    <title><%= title %></title>
+    <!--<link rel='stylesheet' href='/stylesheets/style.css' />-->
+    <link href="styles/bootstrap.css" rel="stylesheet" type="text/css">
+     <link href="styles/custom.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>       
+  <header>
+            <nav class ="navbar navbar-default">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#/">D0WNT1ME</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="border"><a href="#/user">User</a></li>
+                        <li><a href="#/news">News</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <ng-view></ng-view>
+        
+        
+        <!-- scripts -->
+        <script src ="scripts/angular.js"></script>
+        <script src ="scripts/angular-route.js"></script>
+        <script src ="ang.js"></script>    
+        <script src ="controllers/newsController.js"></script>
+            
+  </body>
+</html>
